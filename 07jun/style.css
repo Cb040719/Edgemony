@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    transition: all 0.35s;
+  }
+  
+  body {
+    height: 100vh;
+    text-align: center;
+    background-image: url("./Images/back1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Ubuntu';
+  }
+  
+  a {
+    padding-right: 20px;
+    color: #fff;
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
+  }
+  
+  .main-navbar {
+    height: 50px;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0 0 24px rgba(0, 0, 0, 0.6);
+    font-family: "Audiowide";
+  }
+  
+  .main-navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    transform: translateY(12.5px);
+  }
+  .main-navbar:hover{
+    background-color:rgb(100, 10, 10);
+  }
+  .card {
+    color: white;
+    display: inline-block;
+    margin: 80px 10px 10px 0;
+    padding: 20px 0 0 0;
+    width: 200px;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    /*--------------*/
+    backdrop-filter: blur(5px);
+  }
+  
+  .card:hover {
+    background-color:rgb(100, 10, 10);
+    
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.6);
+  }
+  
+  .card:active {
+    box-shadow: inset 0 0 24px rgba(0, 0, 0, 0.6);
+  }
+  
+  .card img {
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    transform: translateY(6px);
+  }
+  
+  .main-footer {
+    position: relative;
+    top: 218px;
+    height: 200px;
+    backdrop-filter: blur(5px);
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  
+  .main-footer div {
+    transform: translateY(60px);
+  }
+  .main-footer p{
+    color: white;
+    font-size: small;
+    float: right;
+    padding-right: 20px;
+    top: 220pz;
+  }

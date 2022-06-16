@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Ubuntu", sans-serif;
+    background-color: rgb(19, 83, 83);
+}
+a{
+    text-decoration: none;
+}
+.home_header{
+    border: 2px solid white;
+    border-radius: 12px;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px black;
+}
+.home_header h1{
+    font-family: "Audiowide", sans serif;
+    text-align: center;
+    font-size: 45px;
+    color: rgb(40, 40, 90);
+}
+.home_header h1:hover{
+    color:rgb(151, 28, 28);
+    cursor: pointer;
+}
+.home_header img{
+    transform: scale(1.4);
+    display: flex;
+    margin: 20px 0 0 45px ;
+}
+.home_navbar{
+    border: 2px solid white;
+    border-radius: 12px;
+    margin: 0 20px 0 20px;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px black;
+
+}
+.home_navbar ul{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.home_navbar a{
+    color:white;
+    padding: 10px;
+    background-color: rgb(23, 143, 143);
+    border-radius: 12px;
+    width: 100px;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px rgb(27, 27, 27);
+}
+.home_navbar a:hover{
+    background-color: rgb(53, 163, 163);
+}
+.home_navbar a:active{
+    box-shadow: inset 1px 1px 1px 1px rgb(27, 27, 27);
+}
+.home_content{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 15px 0 15px;
+}
+.home_content a{
+    color: black
+}
+.card{
+    border: 2px solid white;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px black;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+.card img{
+    height: 200px;
+    margin: 10px;
+    border-radius: 12px;
+}
+.card h2{
+    text-align: center;
+    font-family: "Audiowide", sans-serif;
+}
+.card:hover{
+    background-color: rgb(23, 143, 143);
+}
+.card:active{
+    box-shadow: inset 2px 2px 2px 2px black;
+}
+.home_footer{
+    bottom: 0;
+    border: 2px solid white;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px black;
+    display: flex;
+    justify-content: center;
+    margin: 20px 20px 15px 20px;
+    font-weight: bold;
+}

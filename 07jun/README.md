@@ -1,0 +1,16 @@
+Esercizio 7 giugno 2022:
+-Stilizzare gli elementi body, nav e footer.
+-
+-
+-
+-
+-
+-
+-
+-Aggiunta un'immagine di sfondo;
+-Aggiunto un effetto blur di sfondo a tutti gli elementi;
+-Cambiato colore a tutti gli elementi in :hover;
+-La barra di navigazione, adesso, segue lo scrolling rimanendo fissata nella parte superiore dello schermo (position: fixed);
+-Spostato il login form all'interno dell'elemento footer;
+-Aumentato il valore in px degli shadow effects di tutti gli elementi.
+-Correzione al margine degli elementi di classe .card.
