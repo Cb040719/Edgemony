@@ -30,15 +30,16 @@ for(i=0; i<nNumbers; i++){
 
     const Operation = prompt("Scegli l'operazione desiderata");
     
-    let summa = aNumber[0];
-    let sub = aNumber[0];
-    let mult = aNumber[0];
-    let fract = aNumber[0];
-    aNumber[0] = 0;
+    
+    
+    
+    
 
     switch(Operation) {
         case "+":
             for(i=0; i<nNumbers; i++){ 
+                let summa = aNumber[0];
+                aNumber[0] = 0;
                 summa = sum(summa, aNumber[i]);
                 console.log(summa);
             }
@@ -46,17 +47,28 @@ for(i=0; i<nNumbers; i++){
             break;
         case "-":
             for(i=0; i<nNumbers; i++){
+                let sub = aNumber[0];
+                aNumber[0] = 0;
                 sub = subtraction(sub, aNumber[i]);
+                console.log(sub);
             }
             break;
-    
-        case "*":
-            console.log("Risultato: ", parseFirstNum * parseSecondNum)
-            break;
+        //not working
+        // case "*":
+        //     for(i=0; i<nNumbers; i++){
+        //         let mult = 1;
+        //         mult = multiplication(mult, aNumber[i]);
+        //         console.log(mult);
+        //     }
+        //     break;
         
-        case "/":
-            console.log("Risultato: ", parseFirstNum / parseSecondNum)
-            break;
+        // case "/":
+        //     for(i=0; i<=nNumbers; i++){
+        //         let fract = aNumber[0];
+        //         fract = division(fract, aNumber[i]);
+        //         console.log(fract);
+        //     }
+        //     break;
     
         default:
             alert("Non hai specificato l'operazione")
