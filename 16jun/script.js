@@ -31,9 +31,9 @@ for(i=0; i<nNumbers; i++){
     const Operation = prompt("Scegli l'operazione desiderata");
     
     let summa = aNumber[0];
-    let subba = aNumber[0];
-    let molty = aNumber[0];
-    let divvy = aNumber[0];
+    let sub = aNumber[0];
+    let mult = aNumber[0];
+    let fract = aNumber[0];
     aNumber[0] = 0;
 
     switch(Operation) {
@@ -46,7 +46,7 @@ for(i=0; i<nNumbers; i++){
             break;
         case "-":
             for(i=0; i<nNumbers; i++){
-                
+                sub = subtraction(sub, aNumber[i]);
             }
             break;
     
