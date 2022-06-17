@@ -35,8 +35,6 @@ let aLaptop = {
 };
 
 const phonesQty = parseInt(prompt("phones array lenght"));
-const tabletsQty = parseInt(prompt("tablets array lenght"));
-const laptopsQty = parseInt(prompt("laptops array lenght"));
 
 //phones item input
 for(i=1; i<=phonesQty; i++){
@@ -48,7 +46,7 @@ for(i=1; i<=phonesQty; i++){
     console.log(i + '° cellulare: ' + aPhone);
 }
 
-//tablets item input
+// tablets item input
 for(i=1; i<=tabletsQty; i++){
     aTablet = prompt('Inserisci il nome del ' + i + '° tablet');
     tablets.push(aTablet);
@@ -68,14 +66,12 @@ for(i=1; i<=laptopsQty; i++){
     console.log(i + '° laptop: ' + aLaptop);
 }
 
-//currently not working
+// currently not working
 const choice = prompt("Vuoi che ti vengano mostrati i dispositivi che hai scelto e le relative caratteristiche?")
 
 switch(choice){
     case 'si':
-        for(info of aPhone) {
-            console.log(aPhone[info]);
-          }
+        console.log(Object.values(aPhone))
         break;
     
     case 'no':
