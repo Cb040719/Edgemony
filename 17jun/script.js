@@ -23,6 +23,7 @@
 
 
 //----WORKING!!----//
+
 let phones = [];
 
 let randomAM = prompt("Inserisci la quantità di RAM desiderata");
@@ -36,6 +37,7 @@ let aPhone = {
 };
 
 console.log(aPhone);
+
 //-----------------//
 
 
