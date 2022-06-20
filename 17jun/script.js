@@ -9,6 +9,10 @@
 // }
 // alert('Array display: ' + array);
 //------------------------------------------------------------
+function phoneInfo(){
+    return aPhone.ram + " " + aPhone.memoria + " " + aPhone.anno;
+}
+
 
 let phones = [];
 let tablets = [];
@@ -21,7 +25,7 @@ let year = "";
 let aPhone = {
     ram: randomAM,
     memoria: memory,
-    anno: year
+    anno: year,
 };
 let aTablet = {
     ram: randomAM,
@@ -69,13 +73,13 @@ let aLaptop = {
 // }
 
 // currently not working
-// const choice = prompt("Vuoi che ti vengano mostrati i dispositivi che hai scelto e le relative caratteristiche?")
+const choice = prompt("Vuoi che ti vengano mostrati i dispositivi che hai scelto e le relative caratteristiche?")
 
-// switch(choice){
-//     case 'si':
-//         console.log(aPhone.values);
-//         break;
+switch(choice){
+    case 'si':
+        console.log(phoneInfo());
+        break;
     
-//     case 'no':
-//         prompt("ok alla prossima");
-// }
+    case 'no':
+        prompt("ok alla prossima");
+}
