@@ -1,97 +1,53 @@
-//PUSH DI ELEMENTI IN INPUT
-//------------------------------------------------------------
-// const qty = parseInt(prompt("Specify array length"));
-// const array = [];
-//
-// for(i=0; i<qty; i++){
-//     const item = parseInt(prompt("Specify array item"));
-//     array.push(item);
-// }
-// alert('Array display: ' + array);
-//------------------------------------------------------------
-// function phoneInfo(){
-//     console.log(aPhone.ram + " " + aPhone.memoria + " " + aPhone.anno);
-// }
-
-
-// let tablets = [];
-// let laptops = [];
-
-// let randomAM = 0;
-// let memory = 0;
-// let year = 0;
-
-
-//----WORKING!!----//
-
 let phones = [];
+let tablets = [];
+let laptops = [];
 
-let randomAM = prompt("Inserisci la quantità di RAM desiderata");
-let memory = prompt("Inserisci la quantità di memoria desiderata");
-let year = prompt("Inserisci l'anno di produzione");
+let aPhone = {};
+let aTablet = {};
+let aLaptop = {};
 
-let aPhone = {
-    ram: randomAM,
-    memoria: memory,
-    anno: year
-};
+const phonesQty = parseInt(prompt("phones array lenght"));
+const tabletsQty = parseInt(prompt("tablets array lenght"));
+const laptopsQty = parseInt(prompt("laptops array lenght"));
 
-console.log(aPhone);
-
-//-----------------//
-
-
-// let aTablet = {
-//     ram: randomAM,
-//     memoria: memory,
-//     anno: year
-// };
-// let aLaptop = {
-//     ram: randomAM,
-//     memoria: memory,
-//     anno: year
-// };
-
-// const phonesQty = parseInt(prompt("phones array lenght"));
-// const tabletsQty = parseInt(prompt("tablets array lenght"));
-// const laptopsQty = parseInt(prompt("laptops array lenght"));
-
-//phones item input
-// for(i=1; i<=phonesQty; i++){
-    // aPhone = prompt('Inserisci il nome del cellulare');
-    // phones.push(aPhone);
-// }
+// phones item input
+for(i=1; i<=phonesQty; i++){
+    aPhone.name = prompt('Inserisci il nome del ' + i + '° cellulare');
+    aPhone.ram = prompt("Inserisci la quantità di RAM desiderata");
+    aPhone.memoria = prompt("Inserisci la quantità di memoria desiderata");
+    aPhone.anno = prompt("Inserisci l'anno di produzione");
+    phones.push(aPhone);
+    console.log(i + '° cellulare: ' + aPhone);
+}
 
 // tablets item input
-// for(i=1; i<=tabletsQty; i++){
-//     aTablet = prompt('Inserisci il nome del ' + i + '° tablet');
-//     tablets.push(aTablet);
-//     randomAM = prompt("Inserisci la quantità di RAM desiderata");
-//     memory = prompt("Inserisci la quantità di memoria desiderata");
-//     year = prompt("Inserisci l'anno di produzione");
-//     console.log(i + '° tablet: ' + aTablet);
-// }
+for(i=1; i<=tabletsQty; i++){
+    aTablet.name = prompt('Inserisci il nome del ' + i + '° tablet');
+    aTablet.ram = prompt("Inserisci la quantità di RAM desiderata");
+    aTablet.memoria = prompt("Inserisci la quantità di memoria desiderata");
+    aTablet.anno = prompt("Inserisci l'anno di produzione");
+    tablets.push(aTablet);
+    console.log(i + '° tablet: ' + aTablet);
+}
 
-//laptops item input
-// for(i=1; i<=laptopsQty; i++){
-//     aLaptop = prompt('Inserisci il nome del ' + i + '° laptop');
-//     laptops.push(aLaptop);
-//     randomAM = prompt("Inserisci la quantità di RAM desiderata");
-//     memory = prompt("Inserisci la quantità di memoria desiderata");
-//     year = prompt("Inserisci l'anno di produzione");
-//     console.log(i + '° laptop: ' + aLaptop);
-// }
+// laptops item input
+for(i=1; i<=laptopsQty; i++){
+    aLaptop.name = prompt('Inserisci il nome del ' + i + '° laptop');
+    aLaptop.ram = prompt("Inserisci la quantità di RAM desiderata");
+    aLaptop.memoria = prompt("Inserisci la quantità di memoria desiderata");
+    aLaptop.anno = prompt("Inserisci l'anno di produzione");
+    laptops.push(aLaptop);
+    console.log(i + '° laptop: ' + aLaptop);
+}
+const choice = prompt("Vuoi che ti vengano mostrati i dispositivi che hai scelto e le relative caratteristiche?")
 
-
-
-// currently not working
-// const choice = prompt("Vuoi che ti vengano mostrati i dispositivi che hai scelto e le relative caratteristiche?")
-
-// switch(choice){
-//     case 'si':
-//         console.log(aPhone.ram);
-//         break;
+switch(choice){
+    case 'si':
+        console.log(aPhone);
+        console.log(aTablet);
+        console.log(aLaptop);
+        break;
     
-//     case 'no':
-//         prompt("ok alla prossima");
-// }
+    case 'no':
+        prompt("ok alla prossima");
+}
