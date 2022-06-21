@@ -15,6 +15,7 @@ for(i=1; i<=phonesQty; i++){
     aPhone.anno = prompt("Inserisci l'anno di produzione");
     phones.push(aPhone);
     console.log(i + '° cellulare: ' + aPhone);
+    console.log(aPhone);
 }
 
 // tablets item input
@@ -26,6 +27,7 @@ for(i=1; i<=tabletsQty; i++){
     aTablet.anno = prompt("Inserisci l'anno di produzione");
     tablets.push(aTablet);
     console.log(i + '° tablet: ' + aTablet);
+    console.log(aTablet);
 }
 
 // laptops item input
@@ -37,16 +39,5 @@ for(i=1; i<=laptopsQty; i++){
     aLaptop.anno = prompt("Inserisci l'anno di produzione");
     laptops.push(aLaptop);
     console.log(i + '° laptop: ' + aLaptop);
-}
-const choice = prompt("Vuoi che ti vengano mostrati i dispositivi che hai scelto e le relative caratteristiche?")
-
-switch(choice){
-    case 'si':
-        console.log(aPhone);
-        console.log(aTablet);
-        console.log(aLaptop);
-        break;
-    
-    case 'no':
-        prompt("ok alla prossima");
+    console.log(aLaptop);
 }
