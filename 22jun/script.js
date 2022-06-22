@@ -22,8 +22,6 @@ const itemIndexName = nomi.forEach((element, index, nomi) =>
 // Lanciare un console.log() di ogni elemento, dopo un setTimeout di elemento * index
 
 const getDelay4Element = (delay) => {
-  /* dentro una funzione per poter disabilitare 
-                                    l'intero blocco in console */
   nomi.forEach((element, index) => {
     delay = 1000 * index;
 
