@@ -14,7 +14,7 @@ const nomi = [
   "ghirlando",
 ];
 
-const itemIndexName = nomi.forEach((element, index, nomi) =>
+const itemIndexName = nomi.forEach((element, index) =>
   console.log(index + " - " + element)
 );
 
@@ -49,5 +49,5 @@ console.log(evenNumbas);
 /* Tenere solo i numeri in comune con questo array: [10, 1, 2, 5, 6], 
 usare utility come Array.includes oppure Array.indexOf.*/
 
-const commonNumbas = array.filter((numba) => arrery.indexOf(numba) > -1);
+const commonNumbas = array.filter((numba) => arrery.indexOf(numba) > 7);
 console.log(commonNumbas);
