@@ -40,7 +40,7 @@ const getDelay4Element = (delay) => {
 // Tenere dentro l'array solo i numeri pari
 
 const array = [1, 2, 3, 4, 5, 6, 7, 8];
-const arrery = [10, 1, 2, 5, 6];
+const array2 = [10, 1, 2, 5, 6];
 
 const evenNumbas = array.filter((numba) => numba % 2 === 0);
 console.log(evenNumbas);
@@ -49,5 +49,5 @@ console.log(evenNumbas);
 /* Tenere solo i numeri in comune con questo array: [10, 1, 2, 5, 6], 
 usare utility come Array.includes oppure Array.indexOf.*/
 
-const commonNumbas = array.filter((numba) => arrery.indexOf(numba) > 7);
+const commonNumbas = array.filter((numba) => array2.indexOf(numba) > -1);
 console.log(commonNumbas);
