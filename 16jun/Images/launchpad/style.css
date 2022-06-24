@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+
+html {
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    flex-wrap: wrap;
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #302f2f;
+    padding: 8px;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.603);
+    display: flex;
+    flex-direction: column;
+}
+
+.joinToday {
+    margin: 15px 0 0 0;
+    border-radius: 20px 0 20px 20px;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    background: linear-gradient(0deg, rgba(185, 94, 86, 1) 0%, rgba(250, 192, 118, 1) 100%);
+    border: 0;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.603);
+    text-decoration: none;
+}
+
+.main-header {
+    background-color: #753d53;
+    background-image: url("./Images/back3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.603);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-logo {
+    width: 104px;
+    height: 74px;
+    padding: 5px;
+}
+
+.main-navbar {
+    display: flex;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    /* position: relative; */
+    /* top: -110px; */
+}
+
+.main-navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.main-navbar ul a {
+    text-decoration: none;
+    color: white;
+    background-color: #30273f;
+    padding: 5px;
+    border-radius: 20px 0 0 20px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.603);
+}
+
+.main-navbar a:first-child {
+    border-radius: 20px 25px 0 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 25px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.603);
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    padding: 10px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.603);
+}
+
+.card-image {
+    padding: 10px;
+    background-color: #d2675a;
+    display: flex;
+    width: 40px;
+    border-radius: 100px;
+    box-shadow: 0 0 8px black;
+}
+
+.main-content .card:nth-of-type(2) .card-image {
+    background-color: rgb(99, 114, 150);
+}
+
+.main-content .card:nth-of-type(3) .card-image {
+    background-color: #974e6b;
+}
+
+.card-image img {
+    width: 40px;
+    height: 40px;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    background-color: rgb(65, 70, 85);
+    border-radius: 20px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.603);
+}
+
+
+
+@media only screen and (min-width: 915px) {
+    body {
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .main-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .main-navbar {
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+        justify-content: flex-end;
+        /* position: relative;
+        top: -150px; */
+    }
+
+    .main-navbar ul {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        position: relative;
+    }
+
+    .main-navbar ul a {
+        padding: 10px 15px 10px 15px;
+        border-radius: 15px;
+    }
+
+    .main-navbar ul a:first-child {
+        border-radius: 15px;
+    }
+
+    .joinToday {
+        border-radius: 20px;
+        margin: 0 0 0 0;
+        padding: 10px;
+    }
+
+    .main-wrapper {
+        gap: 100px;
+    }
+
+    .main-card {
+        width: 370px;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 14px;
+    }
+
+    .card {
+        padding: 40px;
+    }
+
+    .main-logo {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:915px) {
+    body {
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .main-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .main-navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: flex-end;
+        /* position: relative;
+        top: -130px; */
+        flex-wrap: wrap-reverse;
+    }
+
+    .main-navbar ul {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .main-navbar ul a {
+        padding: 10px 15px 10px 15px;
+        border-radius: 15px;
+    }
+
+    .main-navbar ul a:first-child {
+        border-radius: 15px;
+    }
+
+    .joinToday {
+        border-radius: 20px;
+        margin: 0 0 0 0;
+        width: 80px;
+        padding: 10px;
+    }
+
+    .main-wrapper {
+        gap: 100px;
+    }
+
+    .main-card {
+        width: 370px;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .main-logo {
+        padding: 0;
+    }
+}
