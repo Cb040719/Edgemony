@@ -5,6 +5,7 @@ const display = document.querySelector(".display");
     console
     const removeButton = document.querySelector(".removeButton");
     const addButton = document.querySelector(".addButton");
+    const resetButton = document.querySelector(".resetButton");
     display.textContent = (counter = 0);
     
     const removeOne = () => {
@@ -16,6 +17,12 @@ const display = document.querySelector(".display");
         display.textContent = (counter = counter + 1);
         console.log(counter);
     };
+
+    const reset = () => {
+        counter = 0;
+        display.textContent = counter;
+        console.log(counter);
+    }
 
     removeButton.addEventListener("click", function() {
         if (counter === 0){
@@ -39,5 +46,9 @@ const display = document.querySelector(".display");
         }
     });   
     
+    resetButton.addEventListener("click", function() {
+        console.clear();
+        reset();
+    })
     
 })();
