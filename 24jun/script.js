@@ -1,27 +1,43 @@
 let counter = 0;
+const display = document.querySelector(".display");
 
 (function () {
     console
     const removeButton = document.querySelector(".removeButton");
     const addButton = document.querySelector(".addButton");
+    display.textContent = (counter = 0);
     
     const removeOne = () => {
-        console.log(counter = counter - 1);
+        display.textContent = (counter = counter - 1);
+        console.log(counter);
     };
 
     const addOne = () => {
-        console.log(counter = counter + 1);
+        display.textContent = (counter = counter + 1);
+        console.log(counter);
     };
 
     removeButton.addEventListener("click", function() {
-        console.clear();
-        removeOne();
+        if (counter === 0){
+            removeButton.ariaDisabled = true;
+        }
+        else{
+            removeButton.ariaDisabled = false;
+            console.clear();
+            removeOne();
+        }
     });
 
     addButton.addEventListener("click", function() {
-        console.clear();
-        addOne();
+        if (counter === 99){
+            addButton.ariaDisabled = true;
+        }
+        else{
+            addButton.ariaDisabled = false;
+            console.clear();
+            addOne();
+        }
     });   
     
-    console.log(counter);
+    
 })();
