@@ -1,4 +1,3 @@
-// (function () {
 const newElement = ($element) => document.createElement($element);
 const choice = prompt("Scegli un elemento da creare");
     
@@ -16,10 +15,10 @@ const createCard = () => {
     $cardTitle.className = "cardTitle";
     $cardImage.className = "cardImage";
     $cardText.className = "cardText";
+
 }
     
     switch(choice){
         case "card":
             createCard();
     }
-// })
