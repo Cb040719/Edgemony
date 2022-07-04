@@ -25,33 +25,26 @@
     console.log(bigArrFiltered);
 })();
 
-(function () {
+(function () { //Esercizio 3
     let shop = [];
 
-    // shop = [
-        // {id: 001, 
-        //  name: "Mikintosh", 
-        //  price: "1.000.000€",
+    shop = [
+        {id: 001, 
+         name: "Mikintosh", 
+         price: "1.000.000€",
 
-        //  get productInfo () {
-        //     return this.name + this.price
-        //  }
-        // }, 
+         get productInfo () {
+            return this.name + this.price
+         },
 
+         set productInfo (value) {
+            [this.name, this.price] = value.split(" ");
+         }
+        }, 
 
-        // {id: 002, 
-        //  name: "Uauei", 
-        //  price:"90€",
-
-        //  get productInfo () {
-        //     return this.name + this.price;
-        //  }
-        // }, 
-
-
-        let product = {id: 003, 
-         name: "TOPPEphone",
-         price: "4,99cent",
+        {id: 002, 
+         name: "Uauei", 
+         price:"90€",
 
          get productInfo () {
             return this.name + this.price;
@@ -59,11 +52,34 @@
 
          set productInfo (value) {
             [this.name, this.price] = value.split(" ");
-         },
-        };
-    // ]
-    product.productInfo = "gionni 400"
-    console.log(product);
+         }
+        }, 
 
-    document.getElementById("para1").innerHTML = product;
+        {id: 003, 
+         name: "TOPPEphone",
+         price: "4,99cent",
+
+         get productInfo () {
+            return this.name + " " + this.price;
+         },
+
+         set productInfo (value) {
+            [this.name, this.price] = value.split(" ");
+         }
+        }
+    ]
+
+    const a = prompt("inserisci valori")
+    const b = prompt("inserisci valori")
+    const c = prompt("inserisci valori")
+
+    shop[0].productInfo = a
+    shop[1].productInfo = b
+    shop[2].productInfo = c
+    
+    console.log(shop);
+
+    document.getElementById("para1").innerHTML = shop[0].productInfo;
+    document.getElementById("para2").innerHTML = shop[1].productInfo;
+    document.getElementById("para3").innerHTML = shop[2].productInfo;
 })();
