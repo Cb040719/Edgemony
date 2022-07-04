@@ -65,5 +65,5 @@
     product.productInfo = "gionni 400"
     console.log(product);
 
-    document.getElementById("para1").innerHTML = JSON.stringify(this.product);
+    document.getElementById("para1").innerHTML = product;
 })();
