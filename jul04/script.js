@@ -26,41 +26,44 @@
 })();
 
 (function () {
-    const shop = [];
-    const namePrice = () => `${this.name} ${this.price}`
+    let shop = [];
 
-    shop.products = [
-        {id: 001, 
-         name: "Mikintosh", 
-         price: "1.000.000€",
+    // shop = [
+        // {id: 001, 
+        //  name: "Mikintosh", 
+        //  price: "1.000.000€",
 
-         get productInfo () {
-            namePrice();
-         }
-        }, 
-
-
-        {id: 002, 
-         name: "Uauei", 
-         price:"90€",
-
-         get productInfo () {
-            namePrice();
-         }
-        }, 
+        //  get productInfo () {
+        //     return this.name + this.price
+        //  }
+        // }, 
 
 
-        {id: 003, 
+        // {id: 002, 
+        //  name: "Uauei", 
+        //  price:"90€",
+
+        //  get productInfo () {
+        //     return this.name + this.price;
+        //  }
+        // }, 
+
+
+        let product = {id: 003, 
          name: "TOPPEphone",
          price: "4,99cent",
 
          get productInfo () {
-            namePrice();
+            return this.name + this.price;
          },
 
          set productInfo (value) {
             [this.name, this.price] = value.split(" ");
-         }
-        }
-    ]
+         },
+        };
+    // ]
+    product.productInfo = "gionni 400"
+    console.log(product);
+
+    document.getElementById("para1").innerHTML = JSON.stringify(this.product);
 })();
