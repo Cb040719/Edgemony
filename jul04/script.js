@@ -12,8 +12,13 @@
         intrallazzo: "Ministro delle Infrastrutture"
     }
 
-    const objMerged = {...obj1, ...obj2};
-    console.log(objMerged);
+    // const objMerged = {...obj1, ...obj2};
+    // console.log(objMerged);
+
+    const mergeObjects = (newProp, value) => {
+        return {...obj1, ...obj2, [newProp]: value};
+    }
+    console.log(mergeObjects())
 })(); 
 
 (function () { //Esercizio 2
@@ -82,4 +87,24 @@
     document.getElementById("para1").innerHTML = shop[0].productInfo;
     document.getElementById("para2").innerHTML = shop[1].productInfo;
     document.getElementById("para3").innerHTML = shop[2].productInfo;
+})();
+
+(function () { //Esercizio 3 - alt
+    
+    let shop = [];
+
+    shop.product = {}
+    shop.product.get = () => {
+           return shop.product.name + " " + shop.product.price + " ";
+    }
+        
+    let setProductInfo = shop.product.set = (info) => {
+        info = [shop.product.name, shop.product.price, shop.product.year] = String(info).split(" ");
+    }
+
+    a = prompt("scegli valori");
+    setProductInfo(info = a);
+    console.log(shop);
+
+    document.getElementById("para1").innerHTML = info
 })();
