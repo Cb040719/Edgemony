@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+  background: transparent;
+  z-index: 2;
+}
+
+.ImageCard button {
+  height: 50px;
+}
+
+.Hero {
+  background-image: url(./images/hero2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #611e25;
+  text-shadow: 0 0 8px white;
+  height: 65vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.Hero nav {
+  display: flex;
+  gap: 40px;
+}
+
+nav a{
+  text-decoration: none;
+  font-weight: 600;
+  color: #3e2023;
+}
+
+.Gallery {
+  background: transparent;
+  backdrop-filter: blur(5px);
+}
